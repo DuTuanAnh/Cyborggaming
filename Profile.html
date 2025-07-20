@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/profile.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <title>CyborgGaming</title>
+</head>
+<body>
+    <div id="app">
+        <div id="js-preloader" class="js-preloader loaded">
+            <div class="preloader-inner">
+                <span class="dot"></span>
+                <div class="dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Header -->
+        <div class="header-area header-sticky">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="main-nav">
+                            <a href="home.html" class="logo">
+                                <img src="./assets/img/logo/logo1.png" alt="">
+                            </a>
+                            <div class="search-input">
+                                <form id="search" action="#">
+                                    <input type="text" placeholder="Type Something" id="searchText" name="searchKeyword" onkeypress="handle">
+                                    <i class="fa fa-search"></i>
+                                </form>
+                            </div>
+                            <ul class="nav">
+                                <li>
+                                    <a href="home.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="browser.html">Browser</a>
+                                </li>
+                                <li>
+                                    <a href="Details.html">Details</a>
+                                </li>
+                                <li>
+                                    <a href="Streams.html">Streams</a>
+                                </li>
+                                <li>
+                                    <a href="Profile.html" class="active">
+                                        Profile
+                                        <img src="./assets/img/logo/logo2.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                            <a class="menu-trigger">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                            <script>
+                            document.addEventListener('DOMContentLoaded', function() {
+                                const menuTrigger = document.querySelector('.menu-trigger');
+                                const nav = document.querySelector('.nav');
+                                if(menuTrigger && nav) {
+                                    menuTrigger.addEventListener('click', function(e) {
+                                        e.preventDefault();
+                                        nav.classList.toggle('active');
+                                    });
+                                }
+                            });
+                            </script>                                                      
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Header -->
+
+        <!-- Container -->
+         <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="page-content">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-profile">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <img src="/assets/img/profile/profile-01.png" alt style="border-radius: 23px;">
+                                        </div>
+                                        <div class="col-lg-4 align-self-center">
+                                            <div class="main-info header-text">
+                                                <span>Offline</span>
+                                                <h4>Alan Smithee</h4>
+                                                <p>You Haven't Gone Live Yet. Go Live By Touching The Button Below</p>
+                                                <div class="main-border-button">
+                                                    <a href="#">Start Live Stream</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 align-self-center">
+                                            <ul>
+                                                <li>
+                                                    Games Downloaded
+                                                    <span>3</span>
+                                                </li>
+                                                <li>
+                                                    Friends Online
+                                                    <span>16</span>
+                                                </li>
+                                                <li>
+                                                    Live Streams
+                                                    <span>None</span>
+                                                </li>
+                                                <li>
+                                                    Clips
+                                                    <span>29</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="clips">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="heading-section">
+                                                            <h4>
+                                                                <em>Your Most Popular</em>
+                                                                Clips
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-cm-6">
+                                                        <div class="item">
+                                                            <div class="thumb">
+                                                                <img src="assets/img/clips/clip-01.png" alt style="border-radius: 23px;">
+                                                                <a href="https://www.youtube.com/watch?v=r1b03uKWk_M" target="_blank">
+                                                                    <i class="fa-solid fa-play"></i>
+                                                                </a>
+                                                            </div>
+                                                            <div class="down-content">
+                                                                <h4>First Clip</h4>
+                                                                <span>
+                                                                    <i class="fa-solid fa-eye"></i>
+                                                                    250
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-cm-6">
+                                                        <div class="item">
+                                                            <div class="thumb">
+                                                                <img src="assets/img/clips/clip-02.png" alt style="border-radius: 23px;">
+                                                                <a href="https://www.youtube.com/watch?v=r1b03uKWk_M" target="_blank">
+                                                                    <i class="fa-solid fa-play"></i>
+                                                                </a>
+                                                            </div>
+                                                            <div class="down-content">
+                                                                <h4>Second Clip</h4>
+                                                                <span>
+                                                                    <i class="fa-solid fa-eye"></i>
+                                                                    183
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-cm-6">
+                                                        <div class="item">
+                                                            <div class="thumb">
+                                                                <img src="assets/img/clips/clip-03.png" alt style="border-radius: 23px;">
+                                                                <a href="https://www.youtube.com/watch?v=r1b03uKWk_M" target="_blank">
+                                                                    <i class="fa-solid fa-play"></i>
+                                                                </a>
+                                                            </div>
+                                                            <div class="down-content">
+                                                                <h4>third Clip</h4>
+                                                                <span>
+                                                                    <i class="fa-solid fa-eye"></i>
+                                                                    141
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-cm-6">
+                                                        <div class="item">
+                                                            <div class="thumb">
+                                                                <img src="assets/img/clips/clip-04.png" alt style="border-radius: 23px;">
+                                                                <a href="https://www.youtube.com/watch?v=r1b03uKWk_M" target="_blank">
+                                                                    <i class="fa-solid fa-play"></i>
+                                                                </a>
+                                                            </div>
+                                                            <div class="down-content">
+                                                                <h4>Fourth Clip</h4>
+                                                                <span>
+                                                                    <i class="fa-solid fa-eye"></i>
+                                                                    91
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="main-button">
+                                                            <a href="#">Load More Clips</a>
+                                                        </div>
+                                                    </div>               
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gaming-library">
+                            <div class="col-lg-12">
+                                <div class="heading-section">
+                                    <h4>
+                                        <em>Your Gaming</em>
+                                        Library
+                                    </h4>
+                                </div>
+                                <div class="item">
+                                    <ul>
+                                        <li>
+                                            <img src="/assets/img/game/game-01.png" alt="" class="templatemo-item">
+                                        </li>
+                                        <li>
+                                            <h4>Dota2</h4>
+                                            <span>Sandbox</span>
+                                        </li>
+                                        <li>
+                                            <h4>Date Added</h4>
+                                            <span>24/08/2036</span>
+                                        </li>
+                                        <li>
+                                            <h4>House Played</h4>
+                                            <span>634 H 22 Mins</span>
+                                        </li>
+                                        <li>
+                                            <h4>Curently</h4>
+                                            <span>Downloaded</span>
+                                        </li>
+                                        <li>
+                                            <div class="main-border-button border-no-active">
+                                                <a href="#">Donwloaded</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <ul>
+                                        <li>
+                                            <img src="/assets/img/game/game-02.png" alt="" class="templatemo-item">
+                                        </li>
+                                        <li>
+                                            <h4>Fortnite</h4>
+                                            <span>Sandbox</span>
+                                        </li>
+                                        <li>
+                                            <h4>Date Added</h4>
+                                            <span>22/06/2036</span>
+                                        </li>
+                                        <li>
+                                            <h4>House Played</h4>
+                                            <span>745 H 52 Mins</span>
+                                        </li>
+                                        <li>
+                                            <h4>Curently</h4>
+                                            <span>Downloaded</span>
+                                        </li>
+                                        <li>
+                                            <div class="main-border-button border-no-active">
+                                                <a href="#">Donwloaded</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item last-item">
+                                    <ul>
+                                        <li>
+                                            <img src="/assets/img/game/game-03.png" alt="" class="templatemo-item">
+                                        </li>
+                                        <li>
+                                            <h4>CS-GO</h4>
+                                            <span>Sandbox</span>
+                                        </li>
+                                        <li>
+                                            <h4>Date Added</h4>
+                                            <span>21/04/2022</span>
+                                        </li>
+                                        <li>
+                                            <h4>House Played</h4>
+                                            <span>632 H 46 Mins</span>
+                                        </li>
+                                        <li>
+                                            <h4>Curently</h4>
+                                            <span>Downloaded</span>
+                                        </li>
+                                        <li>
+                                            <div class="main-border-button border-no-active">
+                                                <a href="#">Donwloaded</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+         <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>
+                           Copyright © 2036 
+                           <a href="#">Cyborg Gaming</a>
+                           Company. All rights reserved.
+                           <br>
+                           Design:
+                           <a href="https://templatemo.com/" target="_blank" title="free CSS templates">Templatemo</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

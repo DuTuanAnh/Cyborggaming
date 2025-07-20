@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <title>CyborgGaming</title>
+</head>
+<body>
+    <div id="app">
+        <div id="js-preloader" class="js-preloader loaded">
+            <div class="preloader-inner">
+                <span class="dot"></span>
+                <div class="dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Header -->
+        <div class="header-area header-sticky">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="main-nav">
+                            <a href="home.html" class="logo">
+                                <img src="./assets/img/logo/logo1.png" alt="">
+                            </a>
+                            <div class="search-input">
+                                <form id="search" action="#">
+                                    <input type="text" placeholder="Type Something" id="searchText" name="searchKeyword" onkeypress="handle">
+                                    <i class="fa fa-search"></i>
+                                </form>
+                            </div>
+                            <ul class="nav">
+                                <li>
+                                    <a href="home.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="browser.html" class="active">Browser</a>
+                                </li>
+                                <li>
+                                    <a href="Details.html">Details</a>
+                                </li>
+                                <li>
+                                    <a href="Streams.html">Streams</a>
+                                </li>
+                                <li>
+                                    <a href="Profile.html">
+                                        Profile
+                                        <img src="./assets/img/logo/logo2.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                            <a class="menu-trigger">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                            <script>
+                            document.addEventListener('DOMContentLoaded', function() {
+                                const menuTrigger = document.querySelector('.menu-trigger');
+                                const nav = document.querySelector('.nav');
+                                if(menuTrigger && nav) {
+                                    menuTrigger.addEventListener('click', function(e) {
+                                        e.preventDefault();
+                                        nav.classList.toggle('active');
+                                    });
+                                }
+                            });
+                            </script>                                                      
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Header -->
+
+        <!-- Container -->
+         <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="page-content">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="featured-games header-text">
+                                    <div class="heading-section">
+                                        <h4>
+                                            <em>Featured</em>
+                                            Games
+                                        </h4>
+                                    </div>
+                                    <div class="owl-features owl-carousel owl-loaded owl-drag">
+                                        <div class="owl-stage-outer">
+                                            <div class="owl-stage" style="transition: 0.25s; width: 2985px; transform: translate3d(-746px, 0px, 0px);">
+                                                <div class="owl-item cloned" style="width: 218.667px; margin-right: 30px;">
+                                                    <div class="item">
+                                                        <div class="thumb">
+                                                            <img src="/assets/img/feature/featured-01.png" alt="">
+                                                            <div class="hover-effect">
+                                                                <h6>2.4K Streaming</h6>
+                                                            </div>
+                                                            <h4>
+                                                                CS-GO
+                                                                <br>
+                                                                <span>2.4K Downloads</span>
+                                                            </h4>
+                                                            <ul>
+                                                                <li>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    4.8
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fa-solid fa-download"></i>
+                                                                    2.3M
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item cloned" style="width: 218.667px; margin-right: 30px;">
+                                                    <div class="item">
+                                                        <div class="thumb">
+                                                            <img src="/assets/img/feature/featured-02.png" alt="">
+                                                            <div class="hover-effect">
+                                                                <h6>2.4K Streaming</h6>
+                                                            </div>
+                                                            <h4>
+                                                                Gamezer
+                                                                <br>
+                                                                <span>249K Downloads</span>
+                                                            </h4>
+                                                            <ul>
+                                                                <li>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    4.8
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fa-solid fa-download"></i>
+                                                                    2.3M
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item cloned" style="width: 218.667px; margin-right: 30px;">
+                                                    <div class="item">
+                                                        <div class="thumb">
+                                                            <img src="/assets/img/feature/featured-03.png" alt="">
+                                                            <div class="hover-effect">
+                                                                <h6>2.4K Streaming</h6>
+                                                            </div>
+                                                            <h4>
+                                                                Island Rusty
+                                                                <br>
+                                                                <span>249K Downloads</span>
+                                                            </h4>
+                                                            <ul>
+                                                                <li>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    4.8
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fa-solid fa-download"></i>
+                                                                    2.3M
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item" style="width: 218.667px; margin-right: 30px;">
+                                                    <div class="item">
+                                                        <div class="thumb">
+                                                            <img src="/assets/img/feature/featured-01.png" alt="">
+                                                            <div class="hover-effect">
+                                                                <h6>2.4K Streaming</h6>
+                                                            </div>
+                                                            <h4>
+                                                                CS-GO
+                                                                <br>
+                                                                <span>2.4K Downloads</span>
+                                                            </h4>
+                                                            <ul>
+                                                                <li>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    4.8
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fa-solid fa-download"></i>
+                                                                    2.3M
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item" style="width: 218.667px; margin-right: 30px;">
+                                                    <div class="item">
+                                                        <div class="thumb">
+                                                            <img src="/assets/img/feature/featured-02.png" alt="">
+                                                            <div class="hover-effect">
+                                                                <h6>2.4K Streaming</h6>
+                                                            </div>
+                                                            <h4>
+                                                                Gamezer
+                                                                <br>
+                                                                <span>249K Downloads</span>
+                                                            </h4>
+                                                            <ul>
+                                                                <li>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    4.8
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fa-solid fa-download"></i>
+                                                                    2.3M
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item" style="width: 218.667px; margin-right: 30px;">
+                                                    <div class="item">
+                                                        <div class="thumb">
+                                                            <img src="/assets/img/feature/featured-03.png" alt="">
+                                                            <div class="hover-effect">
+                                                                <h6>2.4K Streaming</h6>
+                                                            </div>
+                                                            <h4>
+                                                                Island Rusty
+                                                                <br>
+                                                                <span>249K Downloads</span>
+                                                            </h4>
+                                                            <ul>
+                                                                <li>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    4.8
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fa-solid fa-download"></i>
+                                                                    2.3M
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item" style="width: 218.667px; margin-right: 30px;">
+                                                    <div class="item">
+                                                        <div class="thumb">
+                                                            <img src="/assets/img/feature/featured-01.png" alt="">
+                                                            <div class="hover-effect">
+                                                                <h6>2.4K Streaming</h6>
+                                                            </div>
+                                                            <h4>
+                                                                CS-GO
+                                                                <br>
+                                                                <span>2.4K Downloads</span>
+                                                            </h4>
+                                                            <ul>
+                                                                <li>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    4.8
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fa-solid fa-download"></i>
+                                                                    2.3M
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item" style="width: 218.667px; margin-right: 30px;">
+                                                    <div class="item">
+                                                        <div class="thumb">
+                                                            <img src="/assets/img/feature/featured-02.png" alt="">
+                                                            <div class="hover-effect">
+                                                                <h6>2.4K Streaming</h6>
+                                                            </div>
+                                                            <h4>
+                                                                Gamezer
+                                                                <br>
+                                                                <span>249K Downloads</span>
+                                                            </h4>
+                                                            <ul>
+                                                                <li>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    4.8
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fa-solid fa-download"></i>
+                                                                    2.3M
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item" style="width: 218.667px; margin-right: 30px;">
+                                                    <div class="item">
+                                                        <div class="thumb">
+                                                            <img src="/assets/img/feature/featured-03.png" alt="">
+                                                            <div class="hover-effect">
+                                                                <h6>2.4K Streaming</h6>
+                                                            </div>
+                                                            <h4>
+                                                                Island Rusty
+                                                                <br>
+                                                                <span>249K Downloads</span>
+                                                            </h4>
+                                                            <ul>
+                                                                <li>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    4.8
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fa-solid fa-download"></i>
+                                                                    2.3M
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item cloned" style="width: 218.667px; margin-right: 30px;">
+                                                    <div class="item">
+                                                        <div class="thumb">
+                                                            <img src="/assets/img/feature/featured-01.png" alt="">
+                                                            <div class="hover-effect">
+                                                                <h6>2.4K Streaming</h6>
+                                                            </div>
+                                                            <h4>
+                                                                CS-GO
+                                                                <br>
+                                                                <span>2.4K Downloads</span>
+                                                            </h4>
+                                                            <ul>
+                                                                <li>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    4.8
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fa-solid fa-download"></i>
+                                                                    2.3M
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item cloned" style="width: 218.667px; margin-right: 30px;">
+                                                    <div class="item">
+                                                        <div class="thumb">
+                                                            <img src="/assets/img/feature/featured-02.png" alt="">
+                                                            <div class="hover-effect">
+                                                                <h6>2.4K Streaming</h6>
+                                                            </div>
+                                                            <h4>
+                                                                Gamezer
+                                                                <br>
+                                                                <span>249K Downloads</span>
+                                                            </h4>
+                                                            <ul>
+                                                                <li>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    4.8
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fa-solid fa-download"></i>
+                                                                    2.3M
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item cloned" style="width: 218.667px; margin-right: 30px;">
+                                                    <div class="item">
+                                                        <div class="thumb">
+                                                            <img src="/assets/img/feature/featured-03.png" alt="">
+                                                            <div class="hover-effect">
+                                                                <h6>2.4K Streaming</h6>
+                                                            </div>
+                                                            <h4>
+                                                                Island Rusty
+                                                                <br>
+                                                                <span>249K Downloads</span>
+                                                            </h4>
+                                                            <ul>
+                                                                <li>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    4.8
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fa-solid fa-download"></i>
+                                                                    2.3M
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <script>
+                                            $(document).ready(function(){
+                                            $('.owl-carousel').owlCarousel({
+                                                loop:true,
+                                                margin:30,
+                                                nav:true,
+                                                autoplay:true,
+                                                autoplayTimeout:2000,
+                                                responsive:{
+                                                0:{ items:1 },
+                                                600:{ items:2 },
+                                                1000:{ items:3 }
+                                                }
+                                            });
+                                            });
+                                            </script>                                           
+                                        </div>
+                                        <div class="owl-nav">
+                                            <button type="button" role="presentation" class="owl-prev">
+                                                <span aria-label="Previous"></span>
+                                            </button>
+                                            <button type="button" role="presentation" class="owl-next">
+                                                <span aria-label="Next"></span>
+                                            </button>
+                                        </div>
+                                        <div class="owl-dots disabled"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="top-downloaded">
+                                    <div class="heading-section">
+                                        <h4>
+                                            <em>Top</em>
+                                            Downloaded
+                                        </h4>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <img src="/assets/img/game/game-01.png" alt="" class="templatemo-item">
+                                            <h4>Fortnite</h4>
+                                            <h6>Sandbox</h6>
+                                            <span>
+                                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                                4.9
+                                            </span>
+                                            <span>
+                                                <i class="fa-solid fa-download" style="color: #ec6090;"></i>
+                                                2.2M
+                                            </span>
+                                            <div class="download">
+                                                <a href="#">
+                                                    <i class="fa-solid fa-download"></i>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img src="/assets/img/game/game-02.png" alt="" class="templatemo-item">
+                                            <h4>CS-GO</h4>
+                                            <h6>Legendary</h6>
+                                            <span>
+                                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                                4.9
+                                            </span>
+                                            <span>
+                                                <i class="fa-solid fa-download" style="color: #ec6090;"></i>
+                                                2.2M
+                                            </span>
+                                            <div class="download">
+                                                <a href="#">
+                                                    <i class="fa-solid fa-download"></i>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img src="/assets/img/game/game-03.png" alt="" class="templatemo-item">
+                                            <h4>Pubg</h4>
+                                            <h6>Battale Royale</h6>
+                                            <span>
+                                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                                4.9
+                                            </span>
+                                            <span>
+                                                <i class="fa-solid fa-download" style="color: #ec6090;"></i>
+                                                2.2M
+                                            </span>
+                                            <div class="download">
+                                                <a href="#">
+                                                    <i class="fa-solid fa-download"></i>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="text-button">
+                                        <a href="#">View All Games</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="start-stream">
+                            <div class="col-lg-12">
+                                <div class="heading-section">
+                                    <h4>
+                                        <em>How To Start Your</em>
+                                        Live Stream
+                                    </h4>
+                                </div>
+                                <div class="row stream-gap">
+                                    <div class="col-lg-4">
+                                        <div class="item">
+                                            <div class="icon">
+                                                <img src="/assets/img/service/service-01.png" alt style="max-width: 60px; border-radius: 50%;">
+                                            </div>
+                                            <h4>Go To Your Profile</h4>
+                                            <p>
+                                                Cyborg Gaming is free HTML CSS website template provided by TemplateMo. This is Bootstrap v5.2.0 layout.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="item">
+                                            <div class="icon">
+                                                <img src="/assets/img/service/service-02.png" alt style="max-width: 60px; border-radius: 50%;">
+                                            </div>
+                                            <h4>Live Stream Button</h4>
+                                            <p>
+                                                If you wish to support us, you can make a 
+                                               <a href="https://www.paypal.com/paypalme/templatemo" target="_blank">small contribution via paypal</a>
+                                                to info [at] templatemo.com
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="item">
+                                            <div class="icon">
+                                                <img src="/assets/img/service/service-03.png" alt style="max-width: 60px; border-radius: 50%;">
+                                            </div>
+                                            <h4>You Are Live</h4>
+                                            <p>
+                                                You are not allowed to redistribute this template's downloadable ZIP file on any other template collection website.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="main-button">
+                                            <a href="Profile.html">Go To Profile</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="live-stream">
+                            <div class="col-lg-12">
+                                <div class="heading-section">
+                                    <h4>
+                                        <em>Most Popular</em>
+                                        Live Stream
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="item">
+                                        <div class="thumb">
+                                            <img src="/assets/img/stream/stream-01.png" alt="">
+                                            <div class="hover-effect">
+                                                <div class="content">
+                                                    <div class="live">
+                                                        <a href="#">Live</a>
+                                                    </div>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="fa-solid fa-eye"></i>
+                                                                1.2K
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="fa-solid fa-gamepad"></i>
+                                                                CS-GO
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="down-content">
+                                            <div class="avatar">
+                                                <img src="/assets/img/avatar/avatar-01.png" alt style="max-width: 46px; border-radius: 50%; float: left;">
+                                            </div>
+                                            <span>
+                                                <i class="fa-solid fa-check"></i>
+                                                KenganC
+                                            </span>
+                                            <h4>Just Talking With Fans</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="item">
+                                        <div class="thumb">
+                                            <img src="/assets/img/stream/stream-02.png" alt="">
+                                            <div class="hover-effect">
+                                                <div class="content">
+                                                    <div class="live">
+                                                        <a href="#">Live</a>
+                                                    </div>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="fa-solid fa-eye"></i>
+                                                                1.2K
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="fa-solid fa-gamepad"></i>
+                                                                CS-GO
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="down-content">
+                                            <div class="avatar">
+                                                <img src="/assets/img/avatar/avatar-02.png" alt style="max-width: 46px; border-radius: 50%; float: left;">
+                                            </div>
+                                            <span>
+                                                <i class="fa-solid fa-check"></i>
+                                                LunaMa
+                                            </span>
+                                            <h4>CS-GO 36 Hours Live Stream</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="item">
+                                        <div class="thumb">
+                                            <img src="/assets/img/stream/stream-03.png" alt="">
+                                            <div class="hover-effect">
+                                                <div class="content">
+                                                    <div class="live">
+                                                        <a href="#">Live</a>
+                                                    </div>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="fa-solid fa-eye"></i>
+                                                                1.2K
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="fa-solid fa-gamepad"></i>
+                                                                CS-GO
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="down-content">
+                                            <div class="avatar">
+                                                <img src="/assets/img/avatar/avatar-03.png" alt style="max-width: 46px; border-radius: 50%; float: left;">
+                                            </div>
+                                            <span>
+                                                <i class="fa-solid fa-check"></i>
+                                                Areluwa
+                                            </span>
+                                            <h4>Maybe Nathej Allnight Chillin'</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="item">
+                                        <div class="thumb">
+                                            <img src="/assets/img/stream/stream-04.png" alt="">
+                                            <div class="hover-effect">
+                                                <div class="content">
+                                                    <div class="live">
+                                                        <a href="#">Live</a>
+                                                    </div>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="fa-solid fa-eye"></i>
+                                                                1.2K
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="fa-solid fa-gamepad"></i>
+                                                                CS-GO
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="down-content">
+                                            <div class="avatar">
+                                                <img src="/assets/img/avatar/avatar-04.png" alt style="max-width: 46px; border-radius: 50%; float: left;">
+                                            </div>
+                                            <span>
+                                                <i class="fa-solid fa-check"></i>
+                                                GangTm
+                                            </span>
+                                            <h4>Live Streaming Till Morning</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="main-button">
+                                        <a href="Streams.html">Discover All Stream</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>
+                           Copyright © 2036 
+                           <a href="#">Cyborg Gaming</a>
+                           Company. All rights reserved.
+                           <br>
+                           Design:
+                           <a href="https://templatemo.com/" target="_blank" title="free CSS templates">Templatemo</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
